@@ -1,0 +1,358 @@
+{
+  "Introduction": {
+    "test": "Introduction Page 1",
+    "skipButton": "Skip"
+  },
+  "Login1": {
+    "bodyText": "Please Confirm your Country Code and Enter your Phone Number.",
+    "textInputPlaceholder": "Phone number",
+    "codeInputErrorText": "Country code is not valid!",
+    "phoneInputErrorText": "Phone number is not valid!",
+    "continueButton": "Continue",
+    "2MinutesLaterText": "Please try again in 2 minutes.",
+    "12HoursLaterTitle": "Too many tries!",
+    "12HoursLaterBody": "Please try again 12 hours later.",
+    "invalidPhoneNumberText": "Phone number is not valid.",
+    "headerText": "Help",
+    "HelpModalMessage": "For using IraqPayment you must first login/create an account.\n In the input box below enter your county code and phone number and then press Next button.",
+    "HelpModalButtonText": "Got it",
+    "modalRequestErrorTitle": "Input box problem!",
+    "modalRequestErrorBody": "It looks like there are problems with the inputs you entered.\nCheck them and try one more time."
+  },
+  "Login2": {
+    "bodyText": "We've sent an SMS with an activation code to your phone:",
+    "phoneNumberText": "Phone Number",
+    "verificationPlaceholder": "Verification Code",
+    "expireText": "Your code had been expired. Please go back and try again",
+    "codeInputErrorText": "Verification code is wrong!",
+    "HelpModalMessage": "For using IraqPayment you must first login/create an account.\n In the input box below enter verification code sent to you and then press Next button.",
+    "modalResponseWrongCodeErrorTitle": "Wrong code!",
+    "modalResponseWrongCodeErrorBody": "You entered a wrong code. If you didn't received a code by sms, please go back and try one more time or call us for help.",
+    "modalResponseManyTriesErrorTitle": "Too Many Tries!",
+    "modalResponseManyTriesErrorBody": "You entered a wrong code many times. If you didn't received a code by sms, please go back and try one more time or call us for help.",
+    "modalResponseExpireCodeErrorTitle": "Code is expired!",
+    "modalResponseExpireCodeErrorBody": "You entered an expired code. Please go back and try one more time or call us if you have any problems."
+  },
+  "Login3": {
+    "bodyText": "Here is your card number:",
+    "phoneNumberText": "Phone Number",
+    "nextButton": "Next",
+    "shareButton": "Share",
+    "HelpModalMessage": "Below you can see your IraqPayment Card. It's a unique card connected to your wallet. You can sahre it so that others can transfer money to you via card number or phone number."
+  },
+  "Login4": {
+    "bodyText": "Please Enter your Name and Password for your Card:",
+    "usernamePlaceholder": "First Name and Last Name",
+    "passwordPlaceholder": "Password",
+    "confirmPasswordPlaceholder": "Confirm Password",
+    "registerButton": "Register",
+    "nameInputErrorText": "Name must consist of alphabetic characters!",
+    "passInputErrorText": "Password must be 4 to 8 numbers.",
+    "confirmPassInputErrorText": "Confirm password doesn't match the password!",
+    "HelpModalMessage": "You must have a name and password for your wallet. You must enter them below to continue using IraqPayment!"
+  },
+  "ContactUs": {
+    "title": "Contact us",
+    "phone": "Phone",
+    "email": "Email",
+    "website": "Website",
+    "address": "Address",
+    "addressDetail": "Xanuy 4, Garaky 211, Kolany 65 , Twemalek, Sulaymaniyah, Iraq"
+  },
+  "Home": {
+    "title": "خانه",
+    "currentBalance": "Current balance:",
+    "rechargeButtonText": "Recharge",
+    "HelpModalMessage": "Iraq Payment main functionality lies in this page!\nHere you can choose to buy charge, transfer money, pay bills and more.",
+    "mainButtons": {
+      "SIMCharge": "SIM Charge",
+      "transferMoney": "Transfer Money",
+      "internet": "Internet",
+      "shopping": "Shopping",
+      "giftCard": "Gift Card",
+      "payBills": "Pay Bills"
+    }
+  },
+  "Transactions": {
+    "title": "گزارش ها",
+    "HelpModalMessage": "Here you can see your last 30 transactions.\nIf you want to see all of your transactions please contact us."
+  },
+  "Profile": {
+    "title": "پروفایل",
+    "HelpModalMessage": "You can change your profile photo, name, address, etc.\nYou can also change your password and If you forget your password, you can restore it by going to one of our offices and get a temporary password. after that you can change your password by using temporary password.",
+    "tabsTitle": {
+      "information": "Information",
+      "changePassword": "Change Password",
+      "forgetPassword": "Forget Password"
+    },
+    "infoTab": {
+      "firstAndLastNameText": "First Name and Last Name",
+      "phoneNumberText": "Phone Number",
+      "addressText": "Address",
+      "emailText": "Email",
+      "genderText": "Gender",
+      "ageText": "Age",
+      "buttonText": "Edit",
+      "radioFemale": "Female",
+      "radioMale": "Male",
+      "nameInputErrorText": "Name must consist of alphabetic characters!",
+      "modalSuccessTitle": "Success!",
+      "modalSuccessBody": "All changes successfully recorded.",
+      "modalSuccessButtonText": "Done"
+    },
+    "changePassTab": {
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Repeat New Password",
+      "confirmPasswordError": "Confirm password dosn't match new password",
+      "changePassword": "Change Password",
+      "previousPasswordErrorText": "Your current password is not correct!",
+      "newPasswordErrorText": "Password must be 4 to 8 numbers.",
+      "confirmNewPasswordErrorText": "Confirm passwords does not match new password.",
+      "modalSuccessTitle": "Success!",
+      "modalSuccessBody": "Your password successfully changed."
+    },
+    "forgetPassTab": {
+      "tempPassword": "Temporary Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Repeat New Password",
+      "confirmPasswordError": "Confirm password dosn't match new password.",
+      "changePassword": "Change Password",
+      "tempPasswordErrorText": "Your temporary password is not valid!"
+    }
+  },
+  "Internet": {
+    "title": "Internet",
+    "mainText": "Select one of the categories below:",
+    "mainISPText": "Select one of the ISPs below:",
+    "ADSLText": "ADSL",
+    "mobileDataText": "Mobile Data",
+    "TishkNetText": "Tishk Net",
+    "GoranNetText": "Goran Net",
+    "NewrozText": "Newroz",
+    "MiNetText": "Mi Net",
+    "TNetText": "T Net"
+  },
+  "PayBills": {
+    "title": "Pay Bills",
+    "mainText": "Select one of the bills type:",
+    "electricityText": "Electricity",
+    "mobilePhoneText": "Mobile Phone",
+    "waterText": "Water",
+    "waterMainText": "Enter your water meter number:",
+    "mobilePhoneMainText": "Enter your ADSL line number:",
+    "electricityMainText": "Enter your electricity meter number:",
+    "waterInputPlaceholder": "Meter Number *",
+    "mobilePhoneInputPlaceholder": "ADSL Line Number *",
+    "electricityInputPlaceholder": "Meter Number *"
+  },
+  "MyCardQRCode": {
+    "title": "My Card & My QR Code",
+    "description": "You can easily share your card with others",
+    "shareButtonText": "Share",
+    "cardText": "You can easily share your card with others:",
+    "cardOwnerText": "Card Owner",
+    "QRCodeText": "You can print your QR Code and customers can pay you by scanning this:",
+    "sharePrintButton": "Share and Print"
+  },
+  "Messages": {
+    "title": "Messages",
+    "noMessagesText": "You don't have any messages yet!"
+  },
+  "Recharge": {
+    "title": "Recharge",
+    "currentBalanceText": "Current Balance:",
+    "mainText": "Choose one of the following ways to increase your wallet balance",
+    "chargeCenter": "Charge Center",
+    "people": "People",
+    "creditCard": "Credit Card",
+    "nextButtonText": "Next",
+    "peopleCardText": "Fill in the fields below:",
+    "peopleAmountError": "Amount must be a positive number!",
+    "peopleAddressError": "You must enter an address!",
+    "modalSuccessMessage": "Your request was\nsuccessfully recorded.\nWe will call you soon.",
+    "modalSuccessButtonText": "Return to Main Page",
+    "modalRequestErrorMessage": "There was a problem\nperforming your request :(\nPlease try again.",
+    "modalRequestErrorButtonText": "Return",
+    "modalServerErrorTitle": "Connection Problem :(",
+    "modalServerErrorBody": "Please make sure you have\ninternet connection and try again.",
+    "amountPlaceholder": "Enter Amount",
+    "addressPlaceholder": "Tap to add a address!",
+    "buttonText": "Send Request",
+    "modalSuccess": {
+      "successMsg": "Request sent successfully!\nWe will call you soon.",
+      "OKButton": "OK"
+    },
+    "modalInputError": {
+      "errorMsg": "Address or amount value is not valid.",
+      "OKButton": "OK"
+    },
+    "modalNetworkError": {
+      "networkIssue": "Network issue! please check device connectivity and try again.",
+      "OKButton": "OK"
+    }
+  },
+  "ChargeCenter": {
+    "title": "Charge Center Details",
+    "routeButtonText": "Show on Map"
+  },
+  "CreditCardPayRequest": {
+    "title": "Recharge with Credit Card",
+    "topText": "Transaction Information",
+    "transactionTypeText": "Transaction Type",
+    "transactionType": "Recharge Credit",
+    "amountText": "Amount",
+    "descriptionText": "Description",
+    "payButton": "Pay"
+  },
+  "SIMCharge": {
+    "title": "SIM Charge",
+    "mainText": "Select one of the operators below:",
+    "AsiacellText": "Asiacell",
+    "KorekText": "Korek",
+    "ZainText": "Zain",
+    "operatorChargesSection": "Select one of the amounts:",
+    "iosHeaderSIMCharge": "Charges available",
+    "noChargeText": "Sorry!\n There aren't any charges right now :(",
+    "modalBalanceErrorMessage": "You don't have enough amount to buy this charge!",
+    "modalBalanceErrorButtonText": "Recharge Account",
+    "HelpModalMessage": "Here you can buy your mobile charges easily from the most popular operators!\n First select your desired operator, then choose the amount you want. After that press Next to go to next level."
+  },
+  "SIMCharge2": {
+    "title": "SIM Charge",
+    "transactionType": "SIM Charge",
+    "operatorText": "Operator",
+    "enterPasswordText": "Enter your Password:",
+    "passwordErrorText": "Password must be a number! (4 to 8 character)",
+    "touchFingerText": "Or use your Fingerprint:",
+    "fingerprintTitle": "Using FingerPrint",
+    "sensorDescription": "Touch sensor",
+    "sensorErrorDescription": "Failed to authorize",
+    "fingerprintCancelText": "Cancel",
+    "fingerprintFallbackLabel": "Show Passcode",
+    "fingerprintBodyText": "Please put your finger on fingerprint to purchase this charge.",
+    "fingerprintErrorToast": "We can'n recognize your fingerprint :( please try again.",
+    "OK": "OK"
+  },
+  "SIMCharge3": {
+    "title": "Receipt",
+    "topText": "Transaction Successfully Completed",
+    "costsText": "Costs",
+    "chargeCodeText": "Charge Code:",
+    "shareButton": "Share",
+    "copyButton": "Copy",
+    "directChargeButton": "Direct Charge"
+  },
+  "TransferMoney1": {
+    "title": "Transfer Money",
+    "mainText": "Choose one of the following ways to transfer money:",
+    "cardNumberText": "Card Number",
+    "phoneText": "Phone Number",
+    "qrCodeText": "QR Code",
+    "fromCardText": "Source Card *",
+    "toCardText": "Destination Card *",
+    "cardError": "You must enter 16-digit card number.",
+    "addCardText": "Add Card",
+    "noCardInCardListModalText": "You don't have any saved information...",
+    "modalCardList": "Cards List",
+    "modalPhoneList": "Phone List",
+    "qrCodeCardText": "Scan the QR Code:"
+  },
+  "TransferMoney2": {
+    "title": "Transfer Money",
+    "senderCardText": "Sender Card",
+    "senderPhoneText": "Sender Phone",
+    "receiverCardText": "Receiver Card",
+    "receiverPhoneText": "Receiver Phone",
+    "description": "Description"
+  },
+  "TransferMoney3": {
+    "dateAndTimeText": "Date And Time",
+    "amountText": "Amount",
+    "descriptionText": "Description",
+    "refrenceText": "Refrence Number",
+    "saveReceiverCardText": "Save receiver information for next transactions.",
+    "fromPhoneText": "Source Phone *",
+    "toPhoneText": "Destination Phone *",
+    "addPhoneText": "Add Phone",
+    "phoneError": "Phone number seems incorrect!"
+  },
+  "TransferMoneyQR1": {
+    "title": "Scan QR Code"
+  },
+  "Comments": {
+    "title": "Comments",
+    "mainText": "Please share your suggestions with us:",
+    "messagePlaceholder": "Message Text",
+    "buttonTitle": "Send Comment",
+    "typeOfMessage": {
+      "item0": "Type of message",
+      "item1": "Error announcement",
+      "item2": "New feature in app",
+      "item3": "Other suggestions",
+      "iosHeader": "Select one"
+    },
+    "modalInputError": {
+      "type": "Please select the type of your message.",
+      "body": "Message Body is empty!",
+      "OKButton": "OK"
+    },
+    "modalInputSuccess": {
+      "successMsg": "Comment sent successfully.\nThank you!",
+      "OKButton": "OK"
+    },
+    "modalNetworkError": {
+      "networkIssue": "Something went wrong. Please try again.",
+      "OKButton": "OK"
+    }
+  },
+  "Settings": {
+    "title": "Settings",
+    "languagePicker": {
+      "iosHeader": "Select a language",
+      "item0": "English",
+      "item1": "Arabic",
+      "item2": "Kurdish"
+    },
+    "notification": "Notification",
+    "changeLanguage": "Change Language",
+    "aboutUs": "About us",
+    "privacy": "Privacy",
+    "rules": "Rules",
+    "withdraw": "Withdraw",
+    "inviteFriends": "Invite Friends",
+    "logOut": "Log out",
+    "inviteShareText": "Recently I'd installed IraqPayment and I'm totally happy with it!\nYou can buy SIM Charges, Transfer Money, Pay in stores and taxi and a lot more.\nDownload it from here:\nhttps://iraqpayment.com",
+    "shareSubject": "Share via:",
+    "modalLogoutTitleMessage": "Are you sure?",
+    "modalLogoutMessage": "(You have to login again\nto access to your account.)",
+    "noButton": "No",
+    "yesButton": "Yes"
+  },
+  "ChangeLanguage": {
+    "title": "Change Language",
+    "mainText": "Choose your preferred language:",
+    "english": "English",
+    "arabic": "Arabic",
+    "kurdish": "Kurdish",
+    "persian": "Persian"
+  },
+  "AboutUs": {
+    "title": "About us",
+    "headerText": "A better way to pay, by IraqPayment!",
+    "bodyText": "  IraqPayment is an online payment system for Iraqi people.\n  You can use IraqPayment for Mobile recharge, Money transfers, Shopping, Internet recharge, Bill payments and more.\n  With IraqPayment, you can move money from your account to someone else’s within minutes;\n  You can pay in lots of places – online, in stores, and more.\n  It also offers mobile recharge for popular mobile operators (Asiacell, Korek and Zain) in Iraq."
+  },
+  "Privacy": {
+    "title": "Privacy",
+    "headerText": "A better way to pay, by IraqPayment!",
+    "bodyText": "  IraqPayment is an online payment system for Iraqi people.\n  You can use IraqPayment for Mobile recharge, Money transfers, Shopping, Internet recharge, Bill payments and more.\n  With IraqPayment, you can move money from your account to someone else’s within minutes;\n  You can pay in lots of places – online, in stores, and more.\n  It also offers mobile recharge for popular mobile operators (Asiacell, Korek and Zain) in Iraq."
+  },
+  "Rules": {
+    "title": "Rules",
+    "headerText": "A better way to pay, by IraqPayment!",
+    "bodyText": "  IraqPayment is an online payment system for Iraqi people.\n  You can use IraqPayment for Mobile recharge, Money transfers, Shopping, Internet recharge, Bill payments and more.\n  With IraqPayment, you can move money from your account to someone else’s within minutes;\n  You can pay in lots of places – online, in stores, and more.\n  It also offers mobile recharge for popular mobile operators (Asiacell, Korek and Zain) in Iraq."
+  },
+  "Withdraw": {
+    "title": "Withdraw"
+  }
+}

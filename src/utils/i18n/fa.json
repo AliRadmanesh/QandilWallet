@@ -1,0 +1,404 @@
+{
+  "Introduction": {
+    "test": "تست صفحه ی معرفی",
+    "skipButton": "رد کردن"
+  },
+  "Login1": {
+    "bodyText": "لطفا کد کشور و شماره تلفن خود را وارد کنید:",
+    "textInputPlaceholder": "شماره تلفن",
+    "codeInputErrorText": "کد کشور معتبر نیست!",
+    "phoneInputErrorText": "شماره تلفن معتبر نیست!",
+    "continueButton": "ادامه",
+    "2MinutesLaterText": "لطفا 2 دقیقه دیگر تلاش نمایید.",
+    "12HoursLaterTitle": "مشکل در سرور!",
+    "12HoursLaterBody": "لطفا 12 ساعت دیگر تلاش نمایید.",
+    "invalidPhoneNumberText": "شماره تلفن معتبر نیست.",
+    "headerText": "کمک",
+    "HelpModalMessage": "برای استفاده از برنامه ابتدا باید وارد شوید/اکانت بسازید.\n در فیلدهای پایین صفحه کد کشور و شماره تلفن خود را وارد کرده و تایید را بزنید.",
+    "HelpModalButtonText": "متوجه شدم",
+    "modalRequestErrorTitle": "مشکل در فیلدهای ورودی!",
+    "modalRequestErrorBody": "به نظر می رسد ورودی ها اشتباه هستند.\n آنها را چک کرده و دوباره تلاش کنید."
+  },
+  "Login2": {
+    "bodyText": "ما یک اس ام اس حاوی کد تایید برای شما ارسال کرده ایم:",
+    "phoneNumberText": "شماره تلفن",
+    "verificationPlaceholder": "کد تایید",
+    "expireText": "کد وارد شده منقضی شده است. لطفا برگردید و دوباره تلاش کنید",
+    "codeInputErrorText": "کد تایید وارد شده غلط است!",
+    "HelpModalMessage": "برای استفاده از برنامه ابتدا باید وارد شوید/اکانت بسازید.\n در فیلدهای پایین صفحه کد کشور و شماره تلفن خود را وارد کرده و تایید را بزنید.",
+    "modalResponseWrongCodeErrorTitle": "کد اشتباه است!",
+    "modalResponseWrongCodeErrorBody": "کد وارد شده اشتباه است. اگر کدی برای شما ارسال نشده است دوباره تلاش کنید.",
+    "modalResponseManyTriesErrorTitle": "تلاش های ناموفق بسیار!",
+    "modalResponseManyTriesErrorBody": "شما بارها کد اشتباهی وارد کرده اید. اگر کدی دریافت نکرده اید دوباره تلاش کنید.",
+    "modalResponseExpireCodeErrorTitle": "کد منقضی شده است!",
+    "modalResponseExpireCodeErrorBody": "شما یک کد منقضی شده وارد کرده اید. لطفا دوباره تلاش کنید."
+  },
+  "Login3": {
+    "bodyText": "شماره کارت شما به شرح زیر است:",
+    "phoneNumberText": "شماره کارت",
+    "nextButton": "بعدی",
+    "shareButton": "به اشتراک گذاری",
+    "HelpModalMessage": "در زیر اطلاعات کارت خود را مشاهده می کنید. این یک کارت منحصربه فرد شماست. دیگران می توانند با استفاده از شماره تلفن یا شماره کارت برای شما پول انتفال دهند."
+  },
+  "Login4": {
+    "bodyText": "لطفا نام و رمز عبور برای خود انتخاب کنید:",
+    "usernamePlaceholder": "نام و نام خانوادگی",
+    "passwordPlaceholder": "رمز عبور",
+    "confirmPasswordPlaceholder": "تایید رمز عبور",
+    "registerButton": "ثبت نام",
+    "nameInputErrorText": "نام شما باید متشکل از حروف باشد!",
+    "passInputErrorText": "رمز عبور باید عددی 4 تا 8 رقمی باشد.",
+    "confirmPassInputErrorText": "این فیلد با رمز عبور مغایرت دارد!",
+    "HelpModalMessage": "برای ساختن حساب کاربری باید نام و رمزی برای خود انتخاب کنید. برای ادامه ی استفاده از برنامه پر کردن این موارد الزامی است!"
+  },
+  "ContactUs": {
+    "title": "تماس با ما",
+    "phone": "تلفن",
+    "email": "پست الکترونیکی",
+    "website": "وب سایت",
+    "address": "آدرس",
+    "addressDetail": "ایران، تهران، دانشگاه شهیدبهشتی!"
+  },
+  "Home": {
+    "title": "خانه",
+    "currentBalance": "اعتبار کیف پول:",
+    "loyaltyPoint": "امتیاز وفاداری",
+    "rechargeButtonText": "افزایش اعتبار",
+    "customerClubButtonText": "باشگاه مشتریان",
+    "HelpModalMessage": "در این صفحه خدمات پرداختی برنامه را مشاهده می کنید!\nخرید شارژ، پرداخت قبوض و ... از جمله این خدمات است.",
+    "mainButtons": {
+      "SIMCharge": "خرید شارژ",
+      "transferMoney": "کارت به کارت",
+      "internet": "بسته اینترنتی",
+      "shopping": "خرید",
+      "giftCard": "نیکوکاری",
+      "payBills": "پرداخت قبوض"
+    }
+  },
+  "Transactions": {
+    "title": "گزارش ها",
+    "HelpModalMessage": "در این صفحه لیست تراکنش های مالی خود را همراه با جزئیات مشاهده می کنید.",
+    "searchPlaceholder": "جستجو",
+    "withdraw": "برداشت",
+    "deposit": "واریز",
+    "sendMoney": "کارت به کارت",
+    "shopping": "خرید",
+    "simCharge": "خرید شارژ",
+    "internet": "خرید بسته اینترنتی",
+    "charity": "نیکوکاری",
+    "payBills": "پرداخت قبوض",
+    "recharge": "افزایش اعتبار",
+    "transactionDetails": "جزئیات تراکنش",
+    "transactionType": "نوع تراکنش",
+    "transactionAmount": "مبلغ",
+    "transactionDateAndTime": "تاریخ و ساعت",
+    "transactionSender": "فرستنده",
+    "transactionReceiver": "دریافت کننده",
+    "transactionDescription": "توضیحات",
+    "transactionRefrence": "کد پیگیری",
+    "transactionOperator": "اپراتور"
+  },
+  "Shopping": {
+    "title": "خرید",
+    "mainText": "یکی از دسته بندی های زیر را برای خرید انتخاب کنید:",
+    "flight": "بلیط هواپیما",
+    "bus": "بلیط اتوبوس",
+    "train": "بلیط قطار",
+    "sunset": "بلیط گردشگری",
+    "concert": "بلیط کنسرت",
+    "cinema": "بلیط سینما"
+  },
+  "Flight": {
+    "title": "خرید بلیط هواپیما"
+  },
+  "Profile": {
+    "title": "پروفایل",
+    "HelpModalMessage": "این صفحه ی پروفایل شماست!\nمی توانید اطلاعات کاربری خود را تغییر دهید. حتی می توانید رمز عبور خود را هم تغییر دهید.",
+    "tabsTitle": {
+      "information": "اطلاعات کاربری",
+      "changePassword": "تغییر رمز عبور",
+      "forgetPassword": "فراموشی رمز عبور"
+    },
+    "infoTab": {
+      "firstAndLastNameText": "نام و نام خانوادگی",
+      "phoneNumberText": "شماره تلفن",
+      "addressText": "آدرس",
+      "emailText": "ایمیل",
+      "genderText": "جنسیت",
+      "ageText": "سن",
+      "buttonText": "تغییردادن",
+      "radioFemale": "زن",
+      "radioMale": "مرد",
+      "nameInputErrorText": "نام شما باید متشکل از حروف باشد!",
+      "modalSuccessTitle": "موفقیت آمیز!",
+      "modalSuccessBody": "تمامی تغییرات با موفقیت ذخیره گردید.",
+      "modalSuccessButtonText": "تایید"
+    },
+    "changePassTab": {
+      "currentPassword": "رمز عبور فعلی",
+      "newPassword": "رمز عبور جدید",
+      "confirmPassword": "تکرار رمز عبور",
+      "confirmPasswordError": "این فیلد با رمز عبور جدید مغایرت دارد.",
+      "changePassword": "تغییر رمز عبور",
+      "previousPasswordErrorText": "رمز عبور فعلی وارد شده اشتباه است!",
+      "newPasswordErrorText": "رمز عبور باید عددی 4 تا 8 رقمی باشد.",
+      "confirmNewPasswordErrorText": "این فیلد با رمز عبور جدید مغایرت دارد.",
+      "modalSuccessTitle": "موفقیت آمیز!",
+      "modalSuccessBody": "رمز عبور شما با موفقیت تغییر یافت."
+    },
+    "forgetPassTab": {
+      "tempPassword": "رمز عبور موقت",
+      "newPassword": "رمز عبور جدید",
+      "confirmPassword": "تکرار رمز عبور جدید",
+      "confirmPasswordError": "این فیلد با رمز عبور جدید مغایرت دارد.",
+      "changePassword": "تغییر رمز عبور",
+      "tempPasswordErrorText": "رمز عبور موقت شما اشتباه است!"
+    }
+  },
+  "Internet": {
+    "title": "بسته اینترنتی",
+    "mainText": "یکی از اپراتور های زیر را انتخاب کنید:",
+    "operatorChargesSection": "لطفا بسته ی مورد نظر خود را انتخاب کنید:",
+    "ADSLText": "ADSL",
+    "mobileDataText": "دیتای موبایل",
+    "TishkNetText": "ایرانسل",
+    "GoranNetText": "همراه اول",
+    "NewrozText": "رایتل",
+    "MiNetText": "شاتل",
+    "TNetText": "آسیاتک"
+  },
+  "Charity": {
+    "title": "نیکوکاری",
+    "currentBalanceText": "سهم شما در نیکوکاری:",
+    "moreButtonText": "مطالب بیشتر",
+    "mainTextTasks": "یکی از موسسات و انجمن های خدمات نیکوکاری را انتخاب کنید:",
+    "mahakText": "محک",
+    "behzistiText": "بهزیستی",
+    "kahrizakText": "کهریزک",
+    "komiteText": "کمیته امداد امام خمینی",
+    "behnamText": "بهنام دهش پور",
+    "EBText": "خانه ای-بی",
+    "charityPayText": "لطفا فیلدهای زیر را پر کنید:",
+    "amountTopTextInput": "مبلغ",
+    "amountPlaceholder": "مبلغ موردنظر برای کمک",
+    "timePlaceholder": "زمان (تاریخ)",
+    "typeOfMessage": {
+      "item0": "انتخاب دوره",
+      "item1": "روزانه",
+      "item2": "هفتگی",
+      "item3": "ماهانه"
+    }
+  },
+  "PayBills": {
+    "title": "پرداخت قبوض",
+    "mainText": "یکی از انواع قبوض زیر را وارد کنید:",
+    "electricityText": "برق",
+    "mobilePhoneText": "تلفن همراه",
+    "waterText": "آب",
+    "waterMainText": "کد کنتور آب خود را وارد کنید:",
+    "mobilePhoneMainText": "شماره خط تلفن خود را وارد کنید:",
+    "electricityMainText": "کد کنتور برق خود را وارد کنید:",
+    "waterInputPlaceholder": "کد کنتور *",
+    "mobilePhoneInputPlaceholder": "شماره خط تلفن *",
+    "electricityInputPlaceholder": "کد کنتور *"
+  },
+  "MyCardQRCode": {
+    "title": "کارت و بارکد من",
+    "description": "به راحتی می توانید کارت خود را با دیگران به اشتراک بگذارید",
+    "shareButtonText": "به اشتراک گذاری",
+    "cardText": "کارت خود را با دوستانتان به اشتراک بگذارید:",
+    "cardOwnerText": "دارنده کارت",
+    "QRCodeText": "می توانید کد کیوآر خود را پرینت کنید و دیگران اسکن کنند:",
+    "sharePrintButton": "پرینت کردن"
+  },
+  "Messages": {
+    "title": "پیام ها",
+    "noMessagesText": "شما هنوز هیچ پیامی ندارید!"
+  },
+  "Recharge": {
+    "title": "افزایش اعتبار",
+    "currentBalanceText": "اعتبار کیف پول:",
+    "mainText": "درگاه موردنظر خود را مشخص کنید:",
+    "chargeCenter": "زیبال",
+    "people": "پی بوم",
+    "creditCard": "زرین پال",
+    "nextButtonText": "بعدی",
+    "peopleCardText": "مبلغ مورد نظر برای افزایش اعتبار را وارد کنید:",
+    "peopleAmountError": "مبلغ باید یک عدد مثبت باشد!",
+    "peopleAddressError": "بایستی آدرس خود را وارد کنید!",
+    "modalSuccessMessage": "درخواست شما\nبا موفقیت ثبت شد.\nبه زودی با شما تماس می گیریم.",
+    "modalSuccessButtonText": "بازگشت به صفحه اصلی",
+    "modalRequestErrorMessage": "مشکلی در اجرای\nدرخواست شما ایجاد شد :(\nلطفا دوباره تلاش کنید.",
+    "modalRequestErrorButtonText": "بازگشت",
+    "modalServerErrorTitle": "مشکل اتصال :(",
+    "modalServerErrorBody": "مطمئن شوید که\nبه اینترنت متصل هستید.",
+    "amountPlaceholder": "مبلغ را وارد کنید",
+    "addressPlaceholder": "برای افزودن آدرس کلیک کنید!",
+    "buttonText": "ارسال درخواست",
+    "modalSuccess": {
+      "successMsg": "درخواست با موفقیت ارسال شد!\nبه زودی با شما تماس می گیریم.",
+      "OKButton": "تایید"
+    },
+    "modalInputError": {
+      "errorMsg": "آدرس یا مبلغ اشتباه است.",
+      "OKButton": "تایید"
+    },
+    "modalNetworkError": {
+      "networkIssue": "مشکل در برقراری ارتباط",
+      "OKButton": "تایید"
+    }
+  },
+  "ChargeCenter": {
+    "title": "جزئیات مرکز شارژ",
+    "routeButtonText": "نمایش روی نقشه"
+  },
+  "CreditCardPayRequest": {
+    "title": "شارژ با کارت اعتباری",
+    "topText": "اطلاعات تراکنش",
+    "transactionTypeText": "نوع تراکنش",
+    "transactionType": "شارژ با کارت اعتباری",
+    "amountText": "مبلغ",
+    "descriptionText": "توضیحات",
+    "payButton": "پرداخت"
+  },
+  "SIMCharge": {
+    "title": "خرید شارژ",
+    "mainText": "یکی از اپراتورهای زیر را انتخاب کنید:",
+    "AsiacellText": "ایرانسل",
+    "KorekText": "همراه اول",
+    "ZainText": "رایتل",
+    "operatorChargesSection": "مبلغ مورد نظر خود را انتخاب کنید:",
+    "iosHeaderSIMCharge": "شارژهای موجود",
+    "noChargeText": "ببخشید!\n در حال حاضر شارژی وجود ندارد :(",
+    "modalBalanceErrorMessage": "شما اعتبار کافی برای خرید این شارژ را ندارید!",
+    "modalBalanceErrorButtonText": "افزایش اعتبار حساب",
+    "HelpModalMessage": "در این صفحه به راحتی می توانید سیم کارت خود را شارژ کنید!"
+  },
+  "SIMCharge2": {
+    "title": "خرید شارژ",
+    "transactionType": "خرید شارژ",
+    "operatorText": "اپراتور",
+    "enterPasswordText": "رمز عبور خود را وارد کنید:",
+    "passwordErrorText": "رمز عبور باید بین 4 تا 8 عدد باشد",
+    "touchFingerText": "یا از اثرانگشت خود استفاده کنید:",
+    "fingerprintTitle": "استفاده از اثرانگشت",
+    "sensorDescription": "سنسور را لمس کنید",
+    "sensorErrorDescription": "خطا در شناسایی",
+    "fingerprintCancelText": "لغو",
+    "fingerprintFallbackLabel": "نمایش رمز عبور",
+    "fingerprintBodyText": "لطفا سنسور اثر انگشت را لمس کنید تا خرید صورت بگیرد.",
+    "fingerprintErrorToast": "ما نمی توانیم اثرانگشت شما را شناسایی کنیم :( لطفا دوباره تلاش کنید.",
+    "OK": "تایید"
+  },
+  "SIMCharge3": {
+    "title": "خرید شارژ",
+    "topText": "تراکنش با موفقیت صورت گرفت",
+    "costsText": "قیمت",
+    "chargeCodeText": "کد شارژ:",
+    "shareButton": "به اشتراک گذاشتن",
+    "copyButton": "کپی",
+    "directChargeButton": "شارژ مستقیم"
+  },
+  "TransferMoney1": {
+    "title": "انتقال پول",
+    "mainText": "یکی از روش های زیر را برای انتقال پول انتخاب کنید:",
+    "cardNumberText": "شماره کارت",
+    "phoneText": "شماره تلفن",
+    "qrCodeText": "QR کد",
+    "fromCardText": "کارت مبدا *",
+    "toCardText": "کارت مقصد *",
+    "cardError": "شماره کارت باید 16 رقمی باشد.",
+    "addCardText": "افزودن",
+    "noCardInCardListModalText": "تا به حال هیچ کارتی ذخیره نشده است...",
+    "modalCardList": "لیست کارت ها",
+    "modalPhoneList": "لیست شماره تلفن ها",
+    "qrCodeCardText": "کد مربوطه را اسکن کنید:"
+  },
+  "TransferMoney2": {
+    "title": "انتقال پول",
+    "senderCardText": "شماره کارت فرستنده",
+    "senderPhoneText": "شماره تلفن فرستنده",
+    "receiverCardText": "شماره کارت گیرنده",
+    "receiverPhoneText": "شماره تلفن گیرنده",
+    "description": "توضیحات"
+  },
+  "TransferMoney3": {
+    "dateAndTimeText": "تاریخ و ساعت",
+    "amountText": "مبلغ",
+    "descriptionText": "توضیحات",
+    "refrenceText": "کد رهگیری",
+    "saveReceiverCardText": "ذخیره اطلاعات گیرنده برای استفاده های بعدی.",
+    "fromPhoneText": "شماره تلفن فرستنده *",
+    "toPhoneText": "شماره تلفن گیرنده *",
+    "addPhoneText": "افزودن",
+    "phoneError": "شماره تلفن اشتباه به نظر می رسد!"
+  },
+  "TransferMoneyQR1": {
+    "title": "QR Code اسکن"
+  },
+  "Comments": {
+    "title": "انتقادات و پیشنهادات",
+    "mainText": "لطفا نظرات خود را با ما درمیان بگذارید:",
+    "messagePlaceholder": "متن پیام",
+    "buttonTitle": "ارسال",
+    "typeOfMessage": {
+      "item0": "نوع پیام",
+      "item1": "اعلام خطا در برنامه",
+      "item2": "ویژگی جدید در برنامه",
+      "item3": "سایر پیشنهادات",
+      "iosHeader": "انتخاب کنید"
+    },
+    "modalInputError": {
+      "type": "لطفا نوع پیام خود را مشخص کنید.",
+      "body": "متن پیام شما خالی است!",
+      "OKButton": "تایید"
+    },
+    "modalInputSuccess": {
+      "successMsg": "پیام شما با موفقیت ارسال گردید!",
+      "OKButton": "تایید"
+    },
+    "modalNetworkError": {
+      "networkIssue": "مشکلی پیش آمده است. لطفا دوباره تلاش کنید.",
+      "OKButton": "تایید"
+    }
+  },
+  "Settings": {
+    "title": "تنظیمات",
+    "languagePicker": {
+      "iosHeader": "زبان خود را انتخاب کنید",
+      "item0": "انگلیسی",
+      "item1": "عربی",
+      "item2": "فارسی"
+    },
+    "notification": "نوتیفیکیشن",
+    "changeLanguage": "تغییر زبان",
+    "aboutUs": "درباره ما",
+    "privacy": "حریم خصوصی",
+    "rules": "قوانین",
+    "withdraw": "برداشت از کیف پول",
+    "inviteFriends": "معرفی به دوستان",
+    "logOut": "خروج از حساب کاربری",
+    "inviteShareText": "من اخیرا قندیل والت را نصب کرده ام و کاملا ازش راضی ام!\n کلی خدمات پرداختی در این برنامه قابل انجام است.\nدر مارکت های معتبر دانلودش کن و لذت ببر!",
+    "shareSubject": "ارسال از طریق:",
+    "modalLogoutTitleMessage": "آیا مطمئنید?",
+    "modalLogoutMessage": "(برای استفاده از برنامه باید دوباره وارد شوید.)",
+    "noButton": "نه",
+    "yesButton": "بله"
+  },
+  "ChangeLanguage": {
+    "title": "تغییر زبان",
+    "mainText": "زبان مورد نظر خود را وارد کنید:",
+    "english": "انگلیسی",
+    "arabic": "عربی",
+    "kurdish": "کوردی",
+    "persian": "فارسی"
+  },
+  "AboutUs": {
+    "title": "درباره ما",
+    "headerText": "روش بهتری برای پرداخت با قندیل والت!",
+    "bodyText": "  قندیل والت یک کیف پول خاص است!\n  از طریق این برنامه می توانید شارژ و بسته های اینترنتی بخرید، کارت به کارت کنید و قبوض خود را بپردازید.\n  این ها تنها خدمات قندیل والت نیست!\n  شما می توانید حتی در امور خیریه شریک شوید یا بلیط هواپیما، قطار، کنسرت یا تورهای گردشگری را خریداری کنید.."
+  },
+  "Withdraw": {
+    "title": "برداشت"
+  }
+}

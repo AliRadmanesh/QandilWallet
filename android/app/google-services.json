@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "471759264046",
+    "firebase_url": "https://iraqpayment.firebaseio.com",
+    "project_id": "iraqpayment",
+    "storage_bucket": "iraqpayment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471759264046:android:98066bf75a2c19af",
+        "android_client_info": {
+          "package_name": "com.iraqpayment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471759264046-g07u85bjs94tsmpfuf26ekkpb0i91otu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2jV3sKPzr0QGSUbkHN4KJuXFEKbFd5Jo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Qandli Wallet</string>
+	<string name="default_notification_channel_id">Qandil Wallet</string>
+	<string name="reactNativeCodePush_androidDeploymentKey">OCIALnfunSGatynJQm3hLKM4EpUS48d36d02-c950-407d-8bcc-ed7a110b9daf</string>
+</resources>
