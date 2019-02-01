@@ -204,7 +204,8 @@ class SIMCharge2 extends Component {
     )
       .then(success => {
         // Authenticated Successfully
-        this.requestForPurchase(1);
+        // this.requestForPurchase(1);
+        this.ResultOfBuying({ status: 1, desc: 1234567890 });
       })
       .catch(error => {
         // Error

@@ -70,9 +70,9 @@
       "SIMCharge": "خرید شارژ",
       "transferMoney": "کارت به کارت",
       "internet": "بسته اینترنتی",
-      "shopping": "خرید",
+      "shopping": "خرید هوشمند",
       "giftCard": "نیکوکاری",
-      "payBills": "پرداخت قبوض"
+      "payBills": "سرمایه گذاری"
     }
   },
   "Transactions": {
@@ -99,7 +99,7 @@
     "transactionOperator": "اپراتور"
   },
   "Shopping": {
-    "title": "خرید",
+    "title": "خرید هوشمند",
     "mainText": "یکی از دسته بندی های زیر را برای خرید انتخاب کنید:",
     "flight": "بلیط هواپیما",
     "bus": "بلیط اتوبوس",
@@ -190,17 +190,18 @@
     }
   },
   "PayBills": {
-    "title": "پرداخت قبوض",
+    "title": "سرمایه گذاری",
     "mainText": "یکی از انواع قبوض زیر را وارد کنید:",
-    "electricityText": "برق",
-    "mobilePhoneText": "تلفن همراه",
-    "waterText": "آب",
+    "electricityText": "سهام",
+    "mobilePhoneText": "طلا",
+    "waterText": "درآمد ثابت",
     "waterMainText": "کد کنتور آب خود را وارد کنید:",
     "mobilePhoneMainText": "شماره خط تلفن خود را وارد کنید:",
     "electricityMainText": "کد کنتور برق خود را وارد کنید:",
     "waterInputPlaceholder": "کد کنتور *",
     "mobilePhoneInputPlaceholder": "شماره خط تلفن *",
-    "electricityInputPlaceholder": "کد کنتور *"
+    "electricityInputPlaceholder": "کد کنتور *",
+    "cardMainText": "لطفا یکی از صندوق های سرمایه گذاری زیر را انتخاب کنید:"
   },
   "MyCardQRCode": {
     "title": "کارت و بارکد من",
@@ -400,5 +401,11 @@
   },
   "Withdraw": {
     "title": "برداشت"
+  },
+  "Questionaire": {
+    "title": "پرسشنامه"
+  },
+  "Chart": {
+    "title": "نتیجه پرسشنامه"
   }
 }

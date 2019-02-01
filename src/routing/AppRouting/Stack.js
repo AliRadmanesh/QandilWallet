@@ -18,6 +18,8 @@ import PayBills from "../../screens/PayBills";
 import Recharge from "../../screens/Recharge";
 import Charity from "../../screens/Charity";
 import Flight from "../../screens/Flight";
+import Questionaire from "../../screens/Questionaire";
+import Chart from "../../screens/Chart";
 
 const AppStack = createStackNavigator(
   {
@@ -38,7 +40,9 @@ const AppStack = createStackNavigator(
     Internet: { screen: Internet },
     PayBills: { screen: PayBills },
     Charity: { screen: Charity },
-    Flight: { screen: Flight }
+    Flight: { screen: Flight },
+    Questionaire: { screen: Questionaire },
+    Chart: { screen: Chart }
   },
   {
     initialRouteName: "Drawer",

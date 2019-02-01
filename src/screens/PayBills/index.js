@@ -6,30 +6,26 @@ import {
   ImageBackground,
   NetInfo,
   ActivityIndicator,
-  TextInput
+  TextInput,
+  I18nManager,
+  AsyncStorage
 } from "react-native";
-import { Container, Content, Text, Button, Picker, Spinner } from "native-base";
+import { Container, Content, Text, Button, Spinner } from "native-base";
 import { NavigationActions } from "react-navigation";
 import axios from "axios";
 import firebase, { Notification } from "react-native-firebase";
+import PersianNumber from "react-native-persian-text";
 
 import I18n from "../../utils/i18n";
 import styles from "./styles";
 import CustomIcon from "../../utils/customIcons";
 import colors from "../../utils/colors";
 import strings from "../../utils/strings";
-import { responsiveHeight } from "react-native-responsive-dimensions";
 
 const HeaderImagePath = "../../../assets/Icons/App/Transactions/header.png";
-const ELECTRICITY_LOGO = "../../../assets/Icons/App/PayBills/electricity.png";
-const MOBILE_PHONE_LOGO = "../../../assets/Icons/App/PayBills/phone.png";
-const WATER_LOGO = "../../../assets/Icons/App/PayBills/water.png";
-
-const TISHKNET_LOGO = "../../../assets/Icons/App/Internet/ISP/tishkNet.png";
-const GORANNET_LOGO = "../../../assets/Icons/App/Internet/ISP/goranNet.png";
-const NEWROZ_LOGO = "../../../assets/Icons/App/Internet/ISP/Newroz.png";
-const MINET_LOGO = "../../../assets/Icons/App/Internet/ISP/MiNET.jpg";
-const TNET_LOGO = "../../../assets/Icons/App/Internet/ISP/TNet.png";
+const SHARE_ICON = "../../../assets/Icons/App/PayBills/share.png";
+const GOLD_ICON = "../../../assets/Icons/App/PayBills/gold.png";
+const INCOME_ICON = "../../../assets/Icons/App/PayBills/income.png";
 
 class PayBills extends Component {
   constructor(props) {
@@ -38,7 +34,7 @@ class PayBills extends Component {
     this.state = {
       charges: [],
       isFetchingCharges: false,
-      selectedCategory: 0,
+      selectedCategory: 2,
       selectedISP: 0,
       selectedCharge: null,
       messageText: "",
@@ -69,7 +65,11 @@ class PayBills extends Component {
       mobilePhoneInput: "",
       mobilePhoneInputError: false,
       electricityInput: "",
-      electricityInputError: false
+      electricityInputError: false,
+      userToken: "",
+      userName: "",
+      userCardNum: "",
+      userPhoneNum: ""
     };
 
     this.availableCharges = [];
@@ -77,7 +77,7 @@ class PayBills extends Component {
 
   componentDidMount() {
     // Get Token, Name, Card number and Phone number from AsyncStorage
-    this.getBalance();
+    this.bootstrapAsync();
 
     NetInfo.isConnected.addEventListener(
       "connectionChange",
@@ -121,12 +121,28 @@ class PayBills extends Component {
     this.setState({ isConnected });
   };
 
+  bootstrapAsync = async () => {
+    const userToken = await AsyncStorage.getItem("userToken");
+    const userName = await AsyncStorage.getItem("userName");
+    const userCardNum = await AsyncStorage.getItem("userCardNum");
+    const userPhoneNum = await AsyncStorage.getItem("userPhoneNum");
+    this.setState({
+      userToken: userToken,
+      userName: userName,
+      userCardNum: userCardNum,
+      userPhoneNum: userPhoneNum
+    });
+
+    if (AsyncStorage.getItem("userNotifToken")) {
+      this.notifTokenFlag = await AsyncStorage.getItem("userNotifToken");
+    }
+
+    // Get Balance And Buttons & Profile Image
+    this.getBalance();
+  };
+
   async getBalance() {
-    const {
-      userToken,
-      userPhoneNum,
-      userCardNum
-    } = this.props.navigation.state.params;
+    const { userToken, userPhoneNum, userCardNum } = this.state;
 
     this.setState({
       balanceLoading: true
@@ -287,8 +303,6 @@ class PayBills extends Component {
     this.props.navigation.dispatch(navigateAction);
   };
 
-  checkInputs = index => {};
-
   renderBalance() {
     if (this.state.balanceLoading) {
       return (
@@ -306,7 +320,9 @@ class PayBills extends Component {
           style={{ flexDirection: "row", flex: 1, justifyContent: "flex-end" }}
         >
           <Text allowFontScaling={false} style={styles.currentBalance}>
-            {this.numberWithCommas(this.state.currentBalance)}
+            <PersianNumber>
+              {this.numberWithCommas(this.state.currentBalance)}
+            </PersianNumber>
           </Text>
           <Text allowFontScaling={false} style={styles.currentBalanceUnit}>
             {" ریال"}
@@ -391,129 +407,6 @@ class PayBills extends Component {
     }
   };
 
-  renderBasedOnBillType = () => {
-    const { selectedCategory } = this.state;
-
-    if (selectedCategory === 1) {
-      // Electricity Bill
-      return (
-        <View style={styles.chargeMethodsCard}>
-          <Text allowFontScaling={false} style={styles.mainText}>
-            {I18n.t("PayBills.electricityMainText")}
-          </Text>
-          <TextInput
-            placeholder={I18n.t("PayBills.electricityInputPlaceholder")}
-            value={this.state.electricityInput}
-            onChangeText={electricityInput =>
-              this.setState({ electricityInput })
-            }
-            allowFontScaling={false}
-            underlineColorAndroid="transparent"
-            keyboardType="numeric"
-            style={styles.electricityInput}
-            maxLength={20}
-            onFocus={() => this.setState({ electricityInputError: false })}
-            onSubmitEditing={() => this.checkInputs(selectedCategory)}
-            onEndEditing={() => this.checkInputs(selectedCategory)}
-          />
-          <View
-            style={
-              this.state.electricityInputError
-                ? styles.fieldBorderError
-                : styles.fieldBorder
-            }
-          />
-          {this.showErrorInput(this.state.electricityInputError)}
-        </View>
-      );
-    } else if (selectedCategory === 2) {
-      // Mobile Phone Bill
-      return (
-        <View style={styles.chargeMethodsCard}>
-          <Text allowFontScaling={false} style={styles.mainText}>
-            {I18n.t("PayBills.mobilePhoneMainText")}
-          </Text>
-          <TextInput
-            placeholder={I18n.t("PayBills.mobilePhoneInputPlaceholder")}
-            value={this.state.mobilePhoneInput}
-            onChangeText={mobilePhoneInput =>
-              this.setState({ mobilePhoneInput })
-            }
-            allowFontScaling={false}
-            underlineColorAndroid="transparent"
-            keyboardType="numeric"
-            style={styles.mobilePhoneInput}
-            maxLength={20}
-            onFocus={() => this.setState({ mobilePhoneInputError: false })}
-            onSubmitEditing={() => this.checkInputs(selectedCategory)}
-            onEndEditing={() => this.checkInputs(selectedCategory)}
-          />
-          <View
-            style={
-              this.state.mobilePhoneInputError
-                ? styles.fieldBorderError
-                : styles.fieldBorder
-            }
-          />
-          {this.showErrorInput(this.state.mobilePhoneInputError)}
-        </View>
-      );
-    } else if (selectedCategory === 3) {
-      // Water Bill
-      return (
-        <View style={styles.chargeMethodsCard}>
-          <Text allowFontScaling={false} style={styles.mainText}>
-            {I18n.t("PayBills.waterMainText")}
-          </Text>
-          <TextInput
-            placeholder={I18n.t("PayBills.waterInputPlaceholder")}
-            value={this.state.waterMeterInput}
-            onChangeText={waterMeterInput => this.setState({ waterMeterInput })}
-            allowFontScaling={false}
-            underlineColorAndroid="transparent"
-            keyboardType="numeric"
-            style={styles.waterMeterInput}
-            maxLength={20}
-            onFocus={() => this.setState({ waterMeterInputError: false })}
-            onSubmitEditing={() => this.checkInputs(selectedCategory)}
-            onEndEditing={() => this.checkInputs(selectedCategory)}
-          />
-          <View
-            style={
-              this.state.waterMeterInputError
-                ? styles.fieldBorderError
-                : styles.fieldBorder
-            }
-          />
-          {this.showErrorInput(this.state.waterMeterInputError)}
-        </View>
-      );
-    }
-  };
-
-  showErrorInput = error => {
-    const {
-      electricityMeterInputError,
-      mobilePhoneInputError,
-      waterMeterInputError
-    } = this.state;
-
-    switch (error) {
-      case electricityMeterInputError: {
-        // Electricity Input Error
-        break;
-      }
-      case mobilePhoneInputError: {
-        // Mobile Phone Input Error
-        break;
-      }
-      case waterMeterInputError: {
-        // Water Input Error
-        break;
-      }
-    }
-  };
-
   render() {
     return (
       <Container style={styles.container}>
@@ -526,7 +419,12 @@ class PayBills extends Component {
               onPress={() => this.props.navigation.goBack()}
               style={styles.closeIcon}
             >
-              <CustomIcon name="arrow-left" size={24} color={colors.WHITE} />
+              <CustomIcon
+                name="arrow-left"
+                size={24}
+                color={colors.WHITE}
+                style={{ transform: [{ scaleX: I18nManager.isRTL ? -1 : 1 }] }}
+              />
             </TouchableOpacity>
 
             <Text allowFontScaling={false} style={styles.titleText}>
@@ -554,7 +452,7 @@ class PayBills extends Component {
 
           <View style={styles.chargeMethodsCard}>
             <Text allowFontScaling={false} style={styles.mainText}>
-              {I18n.t("PayBills.mainText")}
+              {I18n.t("PayBills.cardMainText")}
             </Text>
             <View style={styles.chargeMethodsContainer}>
               <View
@@ -569,7 +467,7 @@ class PayBills extends Component {
                   style={styles.electricityContainer}
                 >
                   <Image
-                    source={require(ELECTRICITY_LOGO)}
+                    source={require(SHARE_ICON)}
                     style={styles.electricityImage}
                     resizeMode="contain"
                   />
@@ -591,7 +489,7 @@ class PayBills extends Component {
                   style={styles.mobilePhoneContainer}
                 >
                   <Image
-                    source={require(MOBILE_PHONE_LOGO)}
+                    source={require(GOLD_ICON)}
                     style={styles.mobilePhoneImage}
                     resizeMode="contain"
                   />
@@ -613,7 +511,7 @@ class PayBills extends Component {
                   style={styles.waterContainer}
                 >
                   <Image
-                    source={require(WATER_LOGO)}
+                    source={require(INCOME_ICON)}
                     style={styles.waterImage}
                     resizeMode="contain"
                   />
@@ -624,7 +522,6 @@ class PayBills extends Component {
               </View>
             </View>
           </View>
-          {this.renderBasedOnBillType()}
         </Content>
         {this.renderFooterButton()}
       </Container>

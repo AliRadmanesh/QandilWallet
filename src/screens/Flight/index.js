@@ -4,7 +4,6 @@ import {
   TextInput,
   TouchableOpacity,
   ImageBackground,
-  AsyncStorage,
   NetInfo,
   ActivityIndicator,
   I18nManager
@@ -17,7 +16,6 @@ import {
   CheckBox,
   Picker
 } from "native-base";
-import TextInputMask from "react-native-text-input-mask";
 import { NavigationActions } from "react-navigation";
 import axios from "axios";
 import firebase, { Notification } from "react-native-firebase";
@@ -83,7 +81,9 @@ class Flight extends Component {
       maxTimeDeparture: "",
       minAmount: "",
       maxAmount: "",
-      isCheckBoxSelected: false
+      isCheckBoxSelected: false,
+      isSecondCheckBoxEnabled: false,
+      isThirdCheckBoxEnabled: false
     };
 
     this.focusNextField = this.focusNextField.bind(this);
@@ -618,6 +618,30 @@ class Flight extends Component {
               <Text style={styles.checkBoxText}>
                 در صورت موجود شدن، علاوه بر اطلاع رسانی از طریق پیامک، با کسر
                 مبلغ از کارت اعتباری ام خریداری شود.
+              </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={styles.checkBoxContainer}
+              onPress={() =>
+                this.setState({
+                  isThirdCheckBoxEnabled: !this.state.isThirdCheckBoxEnabled
+                })
+              }
+            >
+              <CheckBox
+                style={styles.checkBox}
+                color={colors.GREEN_BUTTONS}
+                checked={this.state.isThirdCheckBoxEnabled}
+                onPress={() =>
+                  this.setState({
+                    isThirdCheckBoxEnabled: !this.state.isThirdCheckBoxEnabled
+                  })
+                }
+              />
+              <Text style={styles.checkBoxText}>
+                با گرد کردن هزینه ی بلیط یافت شده، سهمی در مصارف نیکوکاری و
+                خیریه، هرچند کوچک، خواهم داشت.
               </Text>
             </TouchableOpacity>
           </View>

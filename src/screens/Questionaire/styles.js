@@ -4,6 +4,7 @@ import {
   responsiveWidth,
   responsiveFontSize
 } from "react-native-responsive-dimensions";
+
 import colors from "../../utils/colors";
 
 export default {
@@ -45,51 +46,13 @@ export default {
     marginTop: responsiveHeight(3),
     marginRight: responsiveWidth(4)
   },
-  currentBalanceContainer: {
-    alignSelf: "center",
-    alignItems: "center",
-    flexDirection: "row",
-    width: responsiveWidth(90),
-    height: responsiveHeight(7),
-    backgroundColor: colors.WHITE,
-    paddingHorizontal: responsiveWidth(7),
-    borderRadius: 8,
-    shadowColor: colors.BLACK,
-    shadowOpacity: 0.25,
-    shadowRadius: 3.34,
-    elevation: 4,
-    shadowOffset: {
-      width: 0,
-      height: 2
-    }
-  },
-  currentBalanceText: {
+  mainText: {
     fontFamily: I18nManager.isRTL ? "IRANSans" : "Roboto",
-    fontSize: responsiveFontSize(1.7),
-    fontWeight: "normal",
-    fontStyle: "normal",
-    letterSpacing: 0.58,
-    textAlign: "center",
-    color: colors.GREEN_BUTTONS
-  },
-  currentBalance: {
-    fontFamily: I18nManager.isRTL ? "IRANSans" : "Roboto",
-    fontSize: responsiveFontSize(1.8),
-    fontWeight: "normal",
-    fontStyle: "normal",
-    letterSpacing: 0.58,
-    textAlign: "center",
-    color: colors.GREEN_BUTTONS
-  },
-  currentBalanceUnit: {
-    fontFamily: I18nManager.isRTL ? "IRANSans" : "Roboto",
-    fontSize: responsiveFontSize(1.4),
+    fontSize: responsiveFontSize(1.5),
     fontWeight: "300",
     fontStyle: "normal",
     letterSpacing: 0.58,
-    textAlign: "center",
-    color: colors.GREEN_BUTTONS,
-    marginTop: responsiveHeight(0.3)
+    color: colors.LIGHT_BLACK
   },
   chargeMethodsCard: {
     alignSelf: "center",
@@ -178,16 +141,15 @@ export default {
     borderTopWidth: 0.5,
     marginBottom: responsiveHeight(2)
   },
-  departureTimeInput: {
-    width: responsiveWidth(38),
+  birthdayInput: {
+    width: responsiveWidth(75),
     height: responsiveHeight(8),
     fontSize: responsiveFontSize(1.7),
     textAlign: I18nManager.isRTL ? "right" : "left",
     color: colors.LIGHTER_BLACK,
     fontFamily: I18nManager.isRTL ? "IRANSans" : "Roboto",
     marginBottom: responsiveHeight(-2),
-    marginLeft: responsiveWidth(-1),
-    marginRight: responsiveWidth(6)
+    marginLeft: responsiveWidth(-1)
   },
   arrivalTimeInput: {
     width: responsiveWidth(38),

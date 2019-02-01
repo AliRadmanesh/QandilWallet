@@ -440,7 +440,7 @@ class Home extends Component {
 
       case 5:
         navigateAction = NavigationActions.navigate({
-          routeName: "PayBills",
+          routeName: "Questionaire",
           params: {
             index,
             userToken,

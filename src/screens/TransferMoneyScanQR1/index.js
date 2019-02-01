@@ -6,7 +6,6 @@ import {
   TouchableOpacity,
   I18nManager
 } from "react-native";
-import { Button } from "native-base";
 import { NavigationActions } from "react-navigation";
 import QRCodeScanner from "react-native-qrcode-scanner";
 
